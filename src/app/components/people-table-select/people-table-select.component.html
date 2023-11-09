@@ -1,0 +1,24 @@
+<!-- people-table-select.component.html -->
+<h2>Empleados Seleccionados</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Categoría</th>
+      <th>Compañía</th>
+      <th>Nivel de Felicidad</th>
+      <!-- Agrega más encabezados de columna si es necesario -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of data.selectedEmployees">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.category }}</td>
+      <td>{{ employee.company }}</td>
+      <td>{{ employee.levelOfHappiness }}</td>
+      <!-- Agrega más celdas de columna si es necesario -->
+    </tr>
+  </tbody>
+</table>
